@@ -8,7 +8,7 @@
         <p:growl id="growl" showDetail="true"/>
 
             <h:outputText value="Simple ImageSwitch component" />
-            <p:imageSwitch id="simple">
+            <p:imageSwitch effect="1" id="simple">
                 <p:graphicImage value="/resources/images/autocomplete/CC.png" />
                 <p:graphicImage value="/resources/images/autocomplete/Golf.png" />
                 <p:graphicImage value="/resources/images/autocomplete/Polo.png" />
@@ -31,7 +31,7 @@
                              icon="ui-icon-circle-triangle-w" id="prev"/>
             <p:commandButton type="button" onclick="PF('manualSwitch').next();"
                              icon="ui-icon-circle-triangle-e" id="next"/>
-            <p:imageSwitch id="manual" widgetVar="manualSwitch" slideshowAuto="false">
+            <p:imageSwitch effect="a" id="manual" widgetVar="manualSwitch" slideshowAuto="false" >
                 <p:graphicImage value="/resources/images/autocomplete/CC.png" />
                 <p:graphicImage value="/resources/images/autocomplete/Golf.png" />
                 <p:graphicImage value="/resources/images/autocomplete/Polo.png" />
@@ -40,7 +40,7 @@
             <br/>
             <br/>
             <h:outputText value="With List of Cars" />
-            <p:imageSwitch id="withData">
+            <p:imageSwitch id="withData" effect="a">
                 <ui:repeat value="#{imageSwitchBean.cars}" var="car">
                     <p:graphicImage value="/resources/images/autocomplete/#{car.name}.png" />
                 </ui:repeat>
